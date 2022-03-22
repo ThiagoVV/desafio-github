@@ -30,10 +30,7 @@ COMMIT – aponta para tudo (outro commit, autor, para arvores, leva uma data et
 
 Git init – Iniciar o repositório
 Git add – Mover arquivos e iniciar o versionamento
-Git commit – publicar
-
-
-  
+Git commit – publicar  
 
 Chaves SSH e Tokens (outros processos de autenticação) -> 
 Chave SSH -> Estabelecer conexão segura entre duas máquinas / chave pública e privada. 
@@ -78,7 +75,6 @@ usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
 
 thiag@Notebook-ThiagoV MINGW64 ~
 $ ^C
-
 
 thiag@Notebook-ThiagoV MINGW64 ~
 $ ssh-keygen -t ed25519 -C thiago251999@hotmail.com
@@ -130,33 +126,7 @@ Identity added: id_ed25519 (thiago251999@hotmail.com)
 thiag@Notebook-ThiagoV MINGW64 ~/.ssh
 $
  
- 
 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
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 flag -a (Mostra arquivos ocultos)
 
@@ -214,9 +184,6 @@ $ git config --global user.email "thiago251999@hotmail.com"
 
 $ git config --global user.name Thiago
 
-
- 
-
 Comando para limpar GIT BASH – clear
 
 
@@ -243,10 +210,6 @@ thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
 $ git status
 On branch master
 nothing to commit, working tree clean
-
-
-
-
 
 thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
 $ git status

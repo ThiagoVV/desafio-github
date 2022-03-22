@@ -1,0 +1,112 @@
+Desafios desenvolvimento de software – Facilitar a empresa para atingir objetivos -> Nascimento dos requisitos -> Desenvolvimento tradicional de projetos ->
+ 
+ 
+
+Construção de forma interativa – De algum projeto
+ 
+Funcionamento do sw – Fase de produção.
+ 
+
+Ágil é diferente de rápido – Ter a capacidade de responder rapidamente a mudanças.
+ 
+
+O que é SCRUM? 
+ 
+
+O que é um framework?
+No início dos seus estudos, com certeza deve ter vindo à sua mente a pergunta “Será que não existe uma forma mais fácil de fazer isso no meu projeto?” enquanto estava escrevendo linhas e linhas de código para obter algum comportamento, ou mesmo repetindo códigos nas estruturas e até mesmo adicionando dependências para desenvolver alguma funcionalidade. É neste momento que nos deparamos com algo chamado framework.
+O framework nada mais é do que uma ferramenta que vai te ajudar a ter como único objetivo focar em desenvolver o projeto, não em detalhes de configurações.
+Vamos pensar que um frame representa a estrutura de uma casa, na qual só existem as paredes de tijolos levantadas ou mesmo um carro somente com a lataria, como vemos nas montadoras. Essas estruturas estão aguardando o desenvolvimento (work), que no exemplo da casa, corresponderia à escolha da massa corrida que será colocada nas paredes, as cores das tintas, os tipos de pisos. No caso do carro, se serão colocados bancos de tecido ou couro, qual será a cor do painel, vidros escuros ou claros e demais componentes.
+Sendo assim, o framework trouxe a prática de evitar que tenhamos que fazer tarefas repetitivas, automatizando parte do trabalho. Pensando numa situação de desenvolvimento, se precisarmos criar um formulário de cadastro de usuário, ele sempre vai requerer algum tipo de validação como e-mail e senha. O framework já terá essa validação pronta para ser utilizada.
+
+Pilares do SCRUM
+ 
+
+
+
+Razões para adotar SCRUM:
+ 
+O que é backlog: 
+Basicamente, o backlog corresponde a um registro ou histórico de requisições (Backlog, tradução = trabalho em atraso). Essas requisições, via de regra, partem do próprio cliente, embora também possam ser internas. Como o registro inclui a data da requisição, ele permite controlar a quanto tempo cada uma das entradas está em aberto.
+Portanto, não é nada bom ter requisições em aberto, não atendidas, durante muito tempo. Isso afeta negativamente a satisfação do cliente e, consequentemente, o sucesso do seu projeto. Seu objetivo, portanto, deve ser “limpar” o backlog rapidamente.
+
+Características do time SCRUM:
+  
+
+  
+
+Papéis e responsabilidades – 
+Produtct Owner (PO) (Apenas uma pessoa) –
+  
+
+
+
+Scrum Master (SM) – 
+ 
+
+Time de Desenvolvimento (DEV) (Time ser multidisciplinar) – 
+ 
+
+  
+  
+
+Time Box – Tempo máximo definido para fazer uma cerimônia ou todo desenvolvimento em uma sprint
+Sprint – 
+ 
+
+Planning Poker – É possível utilizar para definir os tempos de cada tarefa/atividade. 
+
+
+
+
+
+
+Release Planning (Release Planning de Múltiplas Squads / Release Planning de Projeto) – 
+ 
+
+  
+
+Definir escopo e prioridade.
+ 
+ 
+
+Como desenvolver uma estória:
+ 
+
+Riscos: 
+ 
+   
+
+ 
+
+Épicos (objetivo macro a ser atingido) – Se todos estiverem sido concluídos, o projeto estará concluído.
+Estória – Não dão a dimensão do trabalho a ser feito, para ser concluído, por isso a necessidade das tarefas.
+Tarefas – Desenvolvimento de algum pedaço.
+Estória -> Conjunto de tarefas / Épico -> Conjunto de estórias
+
+ 
+ 
+
+Critérios de aceite: 
+ 
+
+ 
+ 
+
+Cliente / Stakeholders:
+ 
+
+  
+Retro – Retrospectiva
+
+Refinamento (Obrigatório a todos) – Discutir próxima sprint, entregamos, aumentar o entendimento da entrega e a demanda. Várias perguntas ao PO.
+Review (todos devem participar) – Time de desenvolvimento deve apresentar. Ver o que foi entregue.
+
+  
+
+
+
+
+
+ 
+Maturidade do Time – Diretamente ligado ao ambiente de trabalho. Conseguem tocar sozinhos.

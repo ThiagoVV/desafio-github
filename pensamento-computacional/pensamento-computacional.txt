@@ -1,0 +1,46 @@
+Pensamento Computacional: É uma habilidade geral de formulação de problemas e resolução dos mesmos.
+Pensamento sistema e eficiente – Uma máquina e um ser humano devem entender.
+4 pilares 
+ 
+Dividir um problema complexo em subproblemas. (Decomposição).
+Identificar padrões ou tendências. Similaridade e diferenças entre os problemas. (Reconhecimento de padrões).
+Extrapolar o conceito do problema para uma forma generalista. (Abstração).
+Automatizar – Definir passo a passo a solução do problema (Design de algoritmos).
+ 
+Processo contínuo – Definir solução -> Testar a solução -> Aperfeiçoamento da solução encontrada.
+ 
+
+ 
+
+
+
+Habilidades Complementares – 
+1ª HABILIDADE - Raciocínio Lógico (pensamento estruturado -> encontrar a conclusão ou determinar a resolução de um problema) 
+3 partes – Indução (Processo de descoberta) -> Dedução -> Abdução (Diagnóstico, processo investigativo. Pode gerar erros)
+ 
+
+2ª HABILIDADE – Aperfeiçoamento – Melhoramento, ato de aperfeiçoar, Aprimoramento e Refinamento. A partir de uma solução, determinar pontos de melhora e refinamento.
+Encontrar solução eficiente -> Otimizar processos -> Simplificar linhas de código -> Funções bem definidas.
+Resulta em: Maior compreensão, Maior eficiências, Menor tempo e Menor armazenamento.
+
+Decomposição – 
+ 
+ 
+	Desenvolver a decomposição de sua forma.
+ 
+
+
+Reconhecimento de padrão – Similaridades e diferenças. -> Generalizar, com objetivo de obter resolução para problemas diferenças. Similaridade obtida por comparação – dar dados para entender qual é a referência.
+Classificação de dados, reconhecimento de imagens, reconhecimento de fala, análise de cenas e classificação de documentos.
+
+Abstração – Abstrair (Observar, um ou mais elementos, avaliando características e propriedades em separado) -> Abstração (Processo intelectual de isolamento de um objeto da realidade) -> Generalizar (tornar-se geral, mais amplo, extensão).
+ 
+ 
+
+Algoritmos – Sequência de passos com objetivo definido -> Execução de tarefas específicas -> Conjunto de operações que resultam em uma sucessão finita de ações.
+Análise – Estudo e definição dos dados de entrada e saída
+Algoritmo – Descreve o problema por meio de ferramentas narrativas, fluxograma ou pseudocódigo.
+Codificação – O algoritmo é codificado de acordo com a linguagem de programação escolhida.
+Construção de algoritmo – Compreensão do problema -> Definição de dados de entrada -> Definir processamento -> Definir dados de saída -> Utilizar um método de construção -> Teste e diagnóstico.
+Métodos -> Narrativa (linguagem natural) / Fluxograma (símbolos) / Pseudocódigo (Portugol)
+Busca binária – Ordenar o vetor antes de iniciar a busca.

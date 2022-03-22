@@ -1,0 +1,7 @@
+Lógica de programação – Contextualizar a lógica na programação de computadores, buscando a correta sequência de ações para solucionar um problema.
+
+Abstração – Habilidade de concentrar nos aspectos essenciais de um contexto qualquer.
+
+Compiladas: C++
+Interpretadas: Python, PHP, JavaScript
+Portugol: pseudolinguagem

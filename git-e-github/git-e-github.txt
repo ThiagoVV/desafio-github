@@ -1,0 +1,315 @@
+Benefícios: (Controle de Versão é o foco do curso)
+
+Download do git: https://git-scm.com/downloads
+ 
+Git é CLI (Command Line Interface) -> Interação com a linha de comando, não é GUI (Parte visual)
+ 
+Dir – Lista de diretórios, lista as pastas do diretório selecionado
+Cd – Navegação entre os caminhos (locais específicos), as pastas
+Retroceder pastas – cd..
+Cls – Limpar o terminal
+TAB – Autocompletar
+Mkdir – Para criar uma pasta (PASTA workspace CRIADA)
+Se der tudo certo, não há retorno
+Echo hello > hello.txt (criou um arquivo txt com a mensagem hello dentro)
+Del – Deleta so arquivos, mas não os repositórios
+Rdmir – Para deletar diretório (Pode usar as flags /S /Q -> para deletar tudo)
+
+    
+
+SHA1 é relevante -> importante
+Objetos: 
+ 
+BLOBS (bolha -> É objeto, contém metadados do GIT) tem o tipo do objeto, o tamanho, \0 e o conteúdo do arquivo-> Não armazena o nome do arquivo
+   
+
+Trees (tem os metadados) -> Armazenam os BLOBS / Arvore armazena o nome do arquivo / Pode conter outras arvores, apontar para outras arvores. Sha1 e mudado tanto das bolhas quanto da arvore
+   
+
+COMMIT – aponta para tudo (outro commit, autor, para arvores, leva uma data etc.): -> Se altera a blob (altera o SHA1), altera a arvore (altera o SHA1) e altera o commit (altera o SHA1).
+
+Git init – Iniciar o repositório
+Git add – Mover arquivos e iniciar o versionamento
+Git commit – publicar
+
+
+  
+
+Chaves SSH e Tokens (outros processos de autenticação) -> 
+Chave SSH -> Estabelecer conexão segura entre duas máquinas / chave pública e privada. 
+Processo de criação de chave: 
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ ssh-keygen -t ed25519 -c thiago251999@hotmail.com
+Too many arguments.
+usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
+                  [-m format] [-N new_passphrase] [-O option]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-w provider] [-Z cipher]
+       ssh-keygen -p [-a rounds] [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase] [-Z cipher]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-a rounds] [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-a rounds] [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-a rounds] [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q [-l] -f krl_file [file ...]
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                  -n namespace -s signature_file [-r revocation_file]
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ ^C
+
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ ssh-keygen -t ed25519 -C thiago251999@hotmail.com
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/thiag/.ssh/id_ed25519):
+Created directory '/c/Users/thiag/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/thiag/.ssh/id_ed25519
+Your public key has been saved in /c/Users/thiag/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:wmblQKDUW3FoWrRRCfwR7MwkB0E4hz74Cf0ccB1seWc thiago251999@hotmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|  ...BX@==       |
+| . .*.X+@ . E    |
+|  .+ @oX.o o     |
+|  o *..+=        |
+|   o ==.S        |
+|    ooo.         |
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ cd /c/Users/thiag/.ssh
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$ ls
+id_ed25519  id_ed25519.pub
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$ cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM9GlLFVG3DrgvYm5mpUMzjXORbXVTwdkoDamrQSerGS thiago251999@hotmail.com
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$ eval $(ssh-agent -s)
+Agent pid 1326
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$ ls
+id_ed25519  id_ed25519.pub
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$ ssh-add id_ed25519
+Identity added: id_ed25519 (thiago251999@hotmail.com)
+
+thiag@Notebook-ThiagoV MINGW64 ~/.ssh
+$
+ 
+ 
+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
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flag -a (Mostra arquivos ocultos)
+
+Exemplo de criação de repositório GIT: 
+
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ cd ..
+
+thiag@Notebook-ThiagoV MINGW64 /c/Users
+$ cd thiag
+
+thiag@Notebook-ThiagoV MINGW64 ~
+$ cd ..
+
+thiag@Notebook-ThiagoV MINGW64 /c/Users
+$ cd ..
+
+thiag@Notebook-ThiagoV MINGW64 /c
+$ mkdir workspace
+
+thiag@Notebook-ThiagoV MINGW64 /c
+$ cd workspace
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace
+$ mkdir livro-receitas
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace
+$ ls
+livro-receitas/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace
+$ cd livro-receitas/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas
+$ git init
+Initialized empty Git repository in C:/workspace/livro-receitas/.git/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ ls -a
+./  ../  .git/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ cd .git/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+
+$ git config --global user.email "thiago251999@hotmail.com"
+
+$ git config --global user.name Thiago
+
+
+ 
+
+Comando para limpar GIT BASH – clear
+
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ got commit -m "commit inicial"
+bash: got: command not found
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master (root-commit) a03b976] commit inicial
+ 1 file changed, 21 insertions(+)
+ create mode 100644 Strogonoff.md
+
+git init – cria-se um repositório
+git add – Adiciona um arquivo
+git commit – Comita as alterações
+  
+
+Git status – status do arquivo
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+README.md  receitas/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.md
+
+git add * - adiciona todas as mudanças realizadas.
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ ls
+README.md  receitas/
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git remote add origin https://github.com/ThiagoVV/livro-receitas.git
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git remote -v
+origin  https://github.com/ThiagoVV/livro-receitas.git (fetch)
+origin  https://github.com/ThiagoVV/livro-receitas.git (push)
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+thiag@Notebook-ThiagoV MINGW64 /c/workspace/livro-receitas (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.22 KiB | 1.22 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ThiagoVV/livro-receitas.git
+ * [new branch]      master -> master
+
+ 
+Início do SHA1 -> Sequência de 40 números
+
+CONFLITOS – Quando há uma edição na mesma linha que você está mexendo e a pessoa também -> Conflito de merge (duas alterações na mesma linha) -> Ele irá deixar/pedir para alterar antes de subir no github -> Resolve manualmente do Merge Conflit
+
+Para clonar um repositório.
+ 
+
+ 
+.git/ significa que é um repositório.

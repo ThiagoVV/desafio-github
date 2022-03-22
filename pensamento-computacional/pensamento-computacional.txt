@@ -9,11 +9,6 @@ Automatizar – Definir passo a passo a solução do problema (Design de algorit
  
 Processo contínuo – Definir solução -> Testar a solução -> Aperfeiçoamento da solução encontrada.
  
-
- 
-
-
-
 Habilidades Complementares – 
 1ª HABILIDADE - Raciocínio Lógico (pensamento estruturado -> encontrar a conclusão ou determinar a resolução de um problema) 
 3 partes – Indução (Processo de descoberta) -> Dedução -> Abdução (Diagnóstico, processo investigativo. Pode gerar erros)
@@ -25,11 +20,8 @@ Resulta em: Maior compreensão, Maior eficiências, Menor tempo e Menor armazena
 
 Decomposição – 
  
+ 	Desenvolver a decomposição de sua forma.
  
-	Desenvolver a decomposição de sua forma.
- 
-
-
 Reconhecimento de padrão – Similaridades e diferenças. -> Generalizar, com objetivo de obter resolução para problemas diferenças. Similaridade obtida por comparação – dar dados para entender qual é a referência.
 Classificação de dados, reconhecimento de imagens, reconhecimento de fala, análise de cenas e classificação de documentos.
 
